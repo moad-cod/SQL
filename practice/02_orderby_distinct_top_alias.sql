@@ -1,0 +1,35 @@
+{# ORDER BY #}
+
+{# SORTING INCREASE #}
+SELECT *
+FROM Employe
+ORDER BY Age ASC;
+
+{# SORTING DECREASE #}
+SELECT *
+FROM Employe
+ORDER BY Age DESC;
+
+{# SORTING MULIPLE #}
+SELECT *
+FROM Employe
+ORDER BY DepartementID ASC, Salaire DESC;
+
+{# DISTINCT #}
+{# ELIMINATE REPETED VALUES #}
+
+SELECT DISTINCT DepartementID
+FROM Employe;
+
+{# TOP #}
+{# BOUND THE NUMBER OF LINES #}
+SELECT TOP 2 *
+FROM Employe
+ORDER BY Age DESC; {# OUTPUT: THE OLDEST TWO MEMEBERS #}
+
+{# Alias #}
+{# CHANGE TEMPRERY THE NAME OF THE COLUMNS #}
+SELECT 
+    Nom AS NomEmploye,
+    Salaire AS SalaireMensuel
+FROM Employe;
