@@ -30,3 +30,54 @@ FROM Employe;
 SELECT AVG(Salaire) AS MoyenneDepartement1
 FROM Employe
 WHERE DepartementID = 1;
+
+{# EXERCICES #}
+
+Exercice 21:
+SELECT COUNT(*)
+FROM Employe;
+
+Exercice 22:
+SELECT COUNT(*)
+FROM Employe
+WHERE DepartementID IS NOT null;
+
+Exercice 23:
+SELECT COUNT(DISTINCT DepartementID) 
+FROM Employe;
+
+Exercice 24:
+SELECT SUM(Salaire) 
+FROM Employe;
+
+Exercice 25:
+SELECT AVG(Salaire) 
+FROM Employe;
+
+Exercice 26:
+SELECT 
+	MIN(Salaire),
+	MAX(Salaire)
+FROM Employe;
+
+Exercice 27:
+SELECT AVG(Age)
+FROM Employe;
+
+Exercice 28:
+SELECT COUNT(*)
+FROM Employe
+WHERE DepartementID = 1;
+
+Exercice 29:
+SELECT SUM(Salaire)
+FROM Employe
+WHERE DepartementID = 2;
+
+Exercice 30:
+SELECT 
+	AVG(Salaire) AS SalaireMoyen,
+	MIN(Salaire) AS SalaireMinimum,
+	MAX(Salaire) AS SalaireMaximum
+FROM Employe
+WHERE Age > 30;
